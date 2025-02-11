@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>592e9ba7-67ce-4119-821e-2820972aa7d2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireBlazorHybrid.ApiService\AspireBlazorHybrid.ApiService.csproj" />
+    <ProjectReference Include="..\AspireBlazorHybrid.Web\AspireBlazorHybrid.Web.csproj" />
+    <ProjectReference Include="..\AspireBlazorHybrid.ClientStub\AspireBlazorHybrid.ClientStub.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
+    <PackageReference Include="AspireMobile.Hosting" Version="0.7.130-beta" />
+  </ItemGroup>
+
+</Project>
